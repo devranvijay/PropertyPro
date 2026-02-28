@@ -106,7 +106,7 @@ const AdminDashboard = () => {
     const getImgSrc = (images: string[]) => {
         const img = images?.[0];
         if (!img) return '/assets/house-img-1.webp';
-        return img.startsWith('/uploads') ? `http://localhost:5001${img}` : img;
+        return img.startsWith('/uploads') ? `${import.meta.env.VITE_API_URL || 'http://localhost:5001'}${img}` : img;
     };
 
     return (

@@ -239,7 +239,7 @@ const PropertyDetail = () => {
         return <div className="min-h-screen flex items-center justify-center pt-32"><p className="text-2xl font-black text-secondary">Property not found</p></div>;
     }
 
-    const getImgSrc = (img: string) => img?.startsWith('/uploads') ? `http://localhost:5001${img}` : img;
+    const getImgSrc = (img: string) => img?.startsWith('/uploads') ? `${import.meta.env.VITE_API_URL || 'http://localhost:5001'}${img}` : img;
     const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1);
     const minDate = tomorrow.toISOString().split('T')[0];
 

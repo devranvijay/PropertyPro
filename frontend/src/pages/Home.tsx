@@ -176,7 +176,7 @@ const Home = () => {
                             >
                                 <div className="relative h-72 overflow-hidden">
                                     <img
-                                        src={(property.images?.[0]?.startsWith("/uploads") ? "http://localhost:5001" + property.images[0] : property.images?.[0]) || '/assets/house-img-1.webp'}
+                                        src={(property.images?.[0]?.startsWith("/uploads") ? (import.meta.env.VITE_API_URL || 'http://localhost:5001') + property.images[0] : property.images?.[0]) || '/assets/house-img-1.webp'}
                                         alt={property.title}
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                     />

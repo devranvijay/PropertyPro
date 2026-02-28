@@ -53,7 +53,7 @@ const PostProperty = () => {
                 const formDataUpload = new FormData();
                 images.forEach(image => formDataUpload.append('images', image));
 
-                const uploadRes = await fetch('http://localhost:5001/api/upload', {
+                const uploadRes = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5001'}/api/upload`, {
                     method: 'POST',
                     body: formDataUpload
                 });

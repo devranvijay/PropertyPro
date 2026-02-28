@@ -177,7 +177,7 @@ const Listings = () => {
                             <div key={property._id} className="group bg-white rounded-[3rem] overflow-hidden shadow-premium border border-slate-100 hover:border-primary/20 transition-all duration-500 hover:-translate-y-2">
                                 <div className="h-64 relative overflow-hidden">
                                     <img
-                                        src={(property.images?.[0]?.startsWith("/uploads") ? "http://localhost:5001" + property.images[0] : property.images?.[0]) || '/assets/house-img-1.webp'}
+                                        src={(property.images?.[0]?.startsWith("/uploads") ? (import.meta.env.VITE_API_URL || 'http://localhost:5001') + property.images[0] : property.images?.[0]) || '/assets/house-img-1.webp'}
                                         alt={property.title}
                                         className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
                                     />

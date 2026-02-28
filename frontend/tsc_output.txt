@@ -1,0 +1,10 @@
+src/components/EMICalculator.tsx(2,1): error TS6133: 'motion' is declared but its value is never read.
+src/components/EMICalculator.tsx(3,10): error TS6133: 'Calculator' is declared but its value is never read.
+src/components/PropertyTicker.tsx(2,1): error TS6192: All imports in import declaration are unused.
+src/pages/Auth.tsx(3,1): error TS6133: 'motion' is declared but its value is never read.
+src/pages/Dashboard.tsx(1,1): error TS6133: 'motion' is declared but its value is never read.
+src/pages/PostProperty.tsx(4,24): error TS6133: 'Trash2' is declared but its value is never read.
+src/pages/PostProperty.tsx(4,32): error TS6133: 'CheckCircle2' is declared but its value is never read.
+src/pages/PropertyDetail.tsx(1,53): error TS6133: 'ShieldCheck' is declared but its value is never read.
+src/pages/PropertyDetail.tsx(1,77): error TS6133: 'Star' is declared but its value is never read.
+src/pages/PropertyDetail.tsx(1,83): error TS6133: 'Home' is declared but its value is never read.
